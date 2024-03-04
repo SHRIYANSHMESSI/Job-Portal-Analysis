@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Result</title>
+    <link type="image/x-icon" href="../static/img/icons8-data-analysis-66.png" rel="icon">
+    <!-- Add your CSS styles or include external stylesheets here -->
+</head>
+<body>
+    {% include 'header.html' %}
+    {% block head %}
+    {% endblock %}
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Form Submission Result</h1>
+        
+        <p><strong>Job Profile:</strong> {{ job_profile }}</p>
+        <p><strong>Location:</strong> {{ location }}</p>
+        <p><strong>Company Rating:</strong> {{ rating }}</p>
+        <p><strong>Sector:</strong> {{ sector }}</p>
+        <p><strong>Company Name:</strong> {{ company_name }}</p>
+
+        <!-- You can add more content or customize the layout based on your needs -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-8">
+                        {% for i in data %}
+                        <div class="d-flex align-items-center mb-5">
+                            <!-- <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;"> -->
+                            <div class="text-start ps-4">
+                                <h2 class="mb-3"><i class="fa fa-solid fa-building text-primary me-2"></i>{{i.company}}</h2>
+                                <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{i.location}}</span>
+                                <span class="text-truncate me-3"><i class="fa fa-solid fa-book text-primary me-2"></i>{{i.job_title}}</span>
+                                <span class="text-truncate me-3"><i class="far fa-solid fa-eye text-primary me-2"></i>{{i.company_rating}}</span>
+                                <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>{{i.salary_avg_estimate}}</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <h4 class="mb-3">Job description</h4>
+                            <p>{{i.job_description}}</p>
+                        </div>
+                        {% endfor %}
+
+        <p class="mt-4"><a href="/">Go back to home</a></p>
+    </div>
+    {% include 'footer.html' %}
+        {% block foot %}
+        {% endblock %}
+
+
+    <!-- Add your JavaScript or include external scripts here -->
+
+</body>
+</html>

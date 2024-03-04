@@ -1,0 +1,331 @@
+<link type="image/x-icon" href="../static/img/icons8-data-analysis-66.png" rel="icon">
+{% include 'header.html' %}
+{% block head %}
+    <!-- Include lightbox CSS -->
+    <link rel="stylesheet" href="path/to/lightbox2/dist/css/lightbox.min.css">
+    </style>
+{% endblock %}
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="container">
+        <h1 class="text-center mb-5">Our Analysis!!!</h1>
+        
+        <!-- Add your analysis images with connected descriptions and download links -->
+        <div class="text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/employement_type.jpg" data-lightbox="analysis-images" data-title="Analysis Image 1">
+                            <img src="../static/img/employement_type.jpg" alt="Analysis Image 1" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 1: Count of employment type</p>
+                            <ul>
+                                <li>The most common employment type is “Company - Public”, followed by “Company - Private”. These two types account for more than 80% of the total count of employment types.</li>
+                                <li>The least common employment types are “Unknown”, “Contract”, and “College / University”. These three types account for less than 5% of the total count of employment types.</li>
+                                <li>The bar graph indicates that data science jobs are mostly offered by public or private companies, and less frequently by other types of organizations.</li>
+                            </ul>
+                            <a href="../static/img/employement_type.jpg" download="analysis_image1.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/culture_value_rating.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/culture_value_rating.jpg" alt="Analysis Image 2" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 2:</p>
+                            <ul>
+                                <li>The boxplot shows the distribution of the ratings from 1.0 to 5.0, with a median of 4.0 and an interquartile range of 3.5 to 4.5. This means that 50% of the ratings are within this range, and the other 50% are either lower or higher.</li>
+                                <li>The ratings are skewed to the right, meaning that most of the ratings are high and there are fewer low ratings. This suggests that the data science sector has a generally positive company culture and value rating according to the 2024 data from Kaggle.</li>
+                                <li>The boxplot does not have any outliers or extreme values, indicating that there is no significant variation or deviation from the normal distribution of the ratings.</li>
+                            </ul>
+                            <a href="../static/img/culture_value_rating.jpg" download="analysis_image2.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/job_title.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/job_title.jpg" alt="Analysis Image 3" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 3:The bar graph shows the frequency of different job titles in the data science sector according to the 2024 data from Kaggle</p>
+                            <ul>
+                                <li>The most common job title is “Data Analyst”, followed by “Data Scientist”. These two titles account for more than 30% of the total number of jobs.</li>
+                                <li>The bar graph indicates that data analysis and data science are the most in-demand skills in the data science sector, and that there are fewer opportunities for entry-level or junior positions.</li>
+                                <li>The least common job titles are “Associate Data Scientist” and “Junior Data Scientist”. These two titles account for less than 5% of the total number of jobs.</li>
+                            </ul>
+                            <a href="../static/img/job_title.jpg" download="analysis_image3.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/pairplot_data.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/pairplot_data.jpg" alt="Analysis Image 4" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 4: Pairplot of all Glassdoor Data-science company data</p>
+                            <ul>
+                                <li>The plots show the relationships between six variables: company rating, career opportunities rating, compensation and benefits rating, culture and values rating, senior management rating, and work-life balance rating.</li>
+                                <li>The scatter plots off the diagonal show the correlations between pairs of variables. There are positive correlations visible in many pairs, meaning that higher ratings in one aspect are associated with higher ratings in another aspect. For example, there is a strong positive correlation between company rating and career opportunities rating, as well as between company rating and culture and values rating.</li>
+                                <li>The histograms on the diagonal show the distributions of each variable. Most of them are skewed to the right, indicating that most employees gave high ratings to their employers.</li>
+                            </ul>
+                            <a href="../static/img/pairplot_data.jpg" download="analysis_image4.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/culture_and_values_rating_career_opportunities_rating_mean.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/culture_and_values_rating_career_opportunities_rating_mean.jpg" alt="Analysis Image 5" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 5: The boxplot shows the distribution of the mean ratings for each category from 1.0 to 5.0, with outliers represented by green dots.</p>
+                            <ul>
+                                <li>The median value for culture and values rating is slightly higher than the median value for career opportunities rating, indicating that employees are more satisfied with the former aspect than the latter.</li>
+                                <li>The interquartile range (IQR) for both categories is similar, with boxes extending approximately from 3.5 to 4.5 in rating. This means that 50% of the mean ratings are within this range, and the other 50% are either lower or higher.</li>
+                                <li>There are more outliers for career opportunities rating than for culture and values rating, suggesting that there is more variation or deviation from the normal distribution of the mean ratings for this category.</li>
+                            </ul>
+                            <a href="../static/img/culture_and_values_rating_career_opportunities_rating_mean.jpg" download="analysis_image5.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href='../static/img/countplot_location_animation.gif' data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src='../static/img/countplot_location_animation.gif' alt="Analysis Image 6" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 6: GIF of no. of jobs  per location.</p>
+                            <ul>
+                                <li>The most common location for data science jobs is Bengluru, which accounts for more than 40% of the total jobs.</li>
+                                <li>The second most common location for data science jobs is India, which accounts for about 20% of the total jobs. We cant specify where in india are these jobs</li>
+                                <li>The combined category of Other accounts for about 30% of the total jobs. This shows that data science jobs are diverse and available in different locations around the India.</li>
+                            </ul>
+                            <a href='../static/img/countplot_location_animation.gif' download="analysis_image6.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                    <div class="image-container">
+                        <a href='../static/img/countplot_animation.gif' data-lightbox="analysis-images" data-title="Analysis Image 1">
+                            <img src='../static/img/countplot_animation.gif' alt="Analysis Image 7" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 7: GIF if countplot of employment for data science jobs</p>
+                            <ul>
+                                <li>The most common type of employment for data science jobs is Company - Private, which accounts for more than one-third of the total jobs. This suggests that data science jobs are mostly offered by private companies.</li>
+                                <li>The second most common type of employment for data science jobs is Company - Public, which accounts for almost one-third of the total jobs. This indicates that data science jobs are also available in public companies, such as government agencies or state-owned enterprises.</li>
+                                <li>The least common types of employment for data science jobs are Contract and College / University, which each account for less than 1% of the total jobs. This implies that data science jobs are rarely offered as contract work or academic positions.</li>
+                            </ul>
+                            <a href='../static/img/countplot_animation.gif' download="analysis_image7.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/distri_company_data_scientist.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/distri_company_data_scientist.jpg" alt="Analysis Image 8" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 8: The bar graph shows the frequency of different company types in the data science sector according to the 2024 data from Kaggle</p>
+                            <ul>
+                                <li>The most common company type is “Company - Private”, followed by “Company - Public”. These two types account for more than 80% of the total number of Data Scientist jobs.</li>
+                                <li>The least common company types are “Self-employed”, “Unknown”, “Private Practice / Firm”, “Subsidiary or Business Segment”, and “Nonprofit Organization”. These types account for less than 10% of the total number of jobs.</li>
+                                <li>The bar graph indicates that data science jobs are mostly offered by private or public companies, and less frequently by other types of organizations.</li>
+                            </ul>
+                            <a href="../static/img/distri_company_data_scientist.jpg" download="analysis_image8.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/comp_rating_scientist_analyst.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/comp_rating_scientist_analyst.jpg" alt="Analysis Image 9" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 9: The bar chart shows the average ratings for each job role from 0 to 4, based on the 2024 data from Kaggle</p>
+                            <ul>
+                                <li>Both job roles have similar ratings across all criteria, with slight variations. For instance:
+                                    In Career Opportunities, both roles have a rating just above 3.5.
+                                    In Compensation and Benefits, both roles have a rating slightly below 3.5.
+                                    In Culture and Values, both roles have a rating slightly above 3.5.
+                                    In Senior Management, both roles have a rating around 3.
+                                    In Work-Life Balance, both roles have a rating just below 4.</li>
+                                <li>The bar chart indicates that there is no significant difference in the satisfaction level of Data Scientists and Data Analysts according to these criteria.</li>
+                            </ul>
+                            <a href="../static/img/comp_rating_scientist_analyst.jpg" download="analysis_image9.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/wordcloud.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/wordcloud.jpg" alt="Analysis Image 10" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 10: The word cloud shows the frequency of different terms in the data science job descriptions from the 2024 data from Kaggle</p>
+                            <ul>
+                                <li>Some of the most prominent words are “experience”, “system”, “machine learning”, “job”, and “research”. These words indicate the skills, requirements, and aspects of data science jobs in 2024.</li>
+                                <li>Some of the less prominent words are “Hyderabad”, “Jaipur”, “language”, and “ability”. These words might indicate the locations, qualifications, and competencies of data science jobs in 2024.</li>
+                                <li>The other job titles, such as “Data Analyst”, “Trainee in Data Science - Fresher”, “Data And Analytics - Associate”, etc., have moderate counts ranging from 0.5 to 2.0.</li>
+                                <li>The word cloud indicates that data science jobs are diverse and varied, but also require experience, system knowledge, machine learning skills, and research abilities.</li>
+                            </ul>
+                            <a href="../static/img/wordcloud.jpg" download="analysis_image10.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/30_job_title_countplot.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/30_job_title_countplot.jpg" alt="Analysis Image 11" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 11: The bar graph shows the frequency of different job titles related to data science and analytics, based on the 2024 data from Kaggle</p>
+                            <ul>
+                                <li>The most common job title is “Junior Data Analyst”, with a count of over 4.0. This indicates that there is a high demand for entry-level data analysts in the data science sector.</li>
+                                <li>The least common job titles are “Data Scientist - AI/ML”, “Data Science G5C’s”, and “Not Just Another Digital Transformation…”. These titles have a count of less than 0.5, suggesting that there are fewer opportunities for specialized or advanced data science roles.</li>
+                                <li>The other job titles, such as “Data Analyst”, “Trainee in Data Science - Fresher”, “Data And Analytics - Associate”, etc., have moderate counts ranging from 0.5 to 2.0.</li>
+                                <li>The bar graph indicates that data science jobs are diverse and varied, but also competitive and challenging.</li>
+                            </ul>
+                            <a href="../static/img/30_job_title_countplot.jpg" download="analysis_image11.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/Location_and_company_rating_relation.jpg" data-lightbox="analysis-images" data-title="Analysis Image 12">
+                            <img src="../static/img/Location_and_company_rating_relation.jpg" alt="Analysis Image 12" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 12: The bar graph shows the mean of the salary estimates for each location from the 2024 data from Kaggle</p>
+                            <ul>
+                                <li>Maharashtra has the highest average salary estimate as indicated by its significantly taller bar compared to others. This suggests that Maharashtra is the most lucrative location for data science jobs in India.</li>
+                                <li>Haryana, Gujarat, Rajasthan, and West Bengal have the lowest average salary estimates as indicated by their very short bars. This suggests that these locations offer less competitive salaries for data science jobs in India.</li>
+                                <li>The bar graph indicates that there is a large variation in the salary estimates across different locations, and that data science jobs are more concentrated and rewarding in certain regions.</li>
+                            </ul>
+                            <a href="../static/img/Location_and_company_rating_relation.jpg" download="analysis_image12.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/boxplot_cul_emp.jpg" data-lightbox="analysis-images" data-title="Analysis Image 13">
+                            <img src="../static/img/boxplot_cul_emp.jpg" alt="Analysis Image 13" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 13: Boxplot of culture and value rating and employment</p>
+                            <ul>
+                                <li>The highest median rating is for Nonprofit Organization with 4.1, followed by Private Practice/Firm with 3.9. These two types of employment also have the smallest interquartile range, indicating less variation in ratings among employees.</li>
+                                <li>The lowest median rating is for Unknown with 2.7, followed by Contract with 2.9. These two types of employment also have the largest interquartile range, indicating more variation in ratings among employees.</li>
+                                <li>The most common type of employment is Company Private with 249 observations, followed by Company Public with 185 observations. The least common type of employment is Self-Employed with only 9 observations.</li>
+                                <li>There are some outliers in the ratings for Company Public, Subsidiary or Business Segment, Nonprofit Organization, and College/University. These outliers may indicate some extreme cases of satisfaction or dissatisfaction among employees in these types of employment.</li>
+                            </ul>
+                            <a href="../static/img/boxplot_cul_emp.jpg" download="analysis_image13.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/boxplot_sal_sector.jpg" data-lightbox="analysis-images" data-title="Analysis Image 2">
+                            <img src="../static/img/boxplot_sal_sector.jpg" alt="Analysis Image 14" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 14: Boxplot graph showing the average salaries across various sectors in data science, based on a Kaggle Glassdoor dataset for 2024.</p>
+                            <ul>
+                                <li>The highest median salary is for Information Technology with $140,000, followed by Aerospace & Defense with $125,000. These two sectors also have some of the highest outliers, indicating some very well-paid data science jobs in these fields.</li>
+                                <li>The lowest median salary is for Education with $65,000, followed by Arts & Recreation with $70,000. These two sectors also have some of the lowest outliers, indicating some very low-paid data science jobs in these fields.</li>
+                                <li>The most common sector is Information Technology with 224 observations, followed by Finance with 144 observations. The least common sector is Agriculture with only 4 observations.</li>
+                                <li>There is a lot of variation in salaries within and across sectors, as shown by the wide interquartile ranges and the presence of outliers. This suggests that data science salaries depend on many factors, such as location, experience, education, skills, and company.</li>
+                            </ul>
+                            <a href="../static/img/boxplot_sal_sector.jpg" download="analysis_image14.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/jointplot_comp_rating_salarypayper_benefitsrat.jpg" data-lightbox="analysis-images" data-title="Analysis Image 15">
+                            <img src="../static/img/jointplot_comp_rating_salarypayper_benefitsrat.jpg" alt="Analysis Image 15" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 15: Scatter plot graph showing the correlation between company ratings and compensation & benefits ratings in data science, based on a Kaggle Glassdoor dataset for 2024.</p>
+                            <ul>
+                                <li>There is a positive correlation between company rating and compensation & benefits rating, meaning that companies with higher overall ratings tend to offer better compensation and benefits to their data science employees.</li>
+                                <li>The majority of the data points are concentrated around higher ratings (4 to 5) for both company and compensation & benefits, indicating that most data science jobs are satisfactory in terms of these factors.</li>
+                                <li>Most of the data points are color-coded blue, which means that they represent yearly salary estimates. This suggests that data science jobs are mostly full-time and stable.</li>
+                                <li>The density plots at the top and right sides show the distributions of company rating and compensation & benefits rating respectively. They both have a peak around 4 to 5, which confirms the previous observation that most data science jobs have high ratings for these factors.</li>
+                            </ul>
+                            <a href="../static/img/jointplot_comp_rating_salarypayper_benefitsrat.jpg" download="analysis_image12.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/swarmplotcomp_locat_salary.jpg" data-lightbox="analysis-images" data-title="Analysis Image 16">
+                            <img src="../static/img/swarmplotcomp_locat_salary.jpg" alt="Analysis Image 16" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 16: Swarm plot graph showing the company size and location of data science jobs, based on a Kaggle Glassdoor dataset for 2024.</p>
+                            <ul>
+                                <li>The most common company size for data science jobs is 10,000+ Employees, which accounts for more than half of the data points across various locations. This suggests that data science jobs are mostly offered by large corporations.</li>
+                                <li>The most common location for data science jobs is Bengaluru, which has more than 200 data points plotted. This indicates that Bengaluru is a major hub for data science in India.</li>
+                                <li>Most of the data points are color-coded blue, which means that they represent yearly salary estimates. This implies that data science jobs are mostly full-time and stable.</li>
+                                <li>There is a wide variation in company size and location for data science jobs, as shown by the scattered distribution of data points. This implies that data science jobs are diverse and available in different settings.</li>
+                            </ul>
+                            <a href="../static/img/swarmplotcomp_locat_salary.jpg" download="analysis_image16.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <a href="../static/img/piechart_sector.jpg" data-lightbox="analysis-images" data-title="Analysis Image 17">
+                            <img src="../static/img/piechart_sector.jpg" alt="Analysis Image 17" class="img-fluid w-100 mb-3" style="max-height: 500px;">
+                        </a>
+                        <div class="image-description">
+                            <p>Description for Analysis Image 17: Pie chart showing the sectors of companies that have data science jobs listed on Glassdoor in 2024.</p>
+                            <ul>
+                                <li>The largest sector for data science jobs is Information Technology, which accounts for more than 40% of the total jobs. This suggests that data science is highly in demand in the IT industry.</li>
+                                <li>The second largest sector for data science jobs is Finance, which accounts for more than 20% of the total jobs. This indicates that data science is widely applied in the financial sector, such as banking, insurance, and investment.</li>
+                                <li>TThe smallest sectors for data science jobs are Media & Communication and Retail & Wholesale, which each account for less than 4% of the total jobs. This implies that data science is not very popular or not very relevant in these sectors.</li>
+                                <li>TThe combined sector of Human Resources & Staffing and Healthcare accounts for 8% of the total jobs. This shows that data science is growing in these sectors, as they may use data science for recruitment, performance evaluation, diagnosis, treatment, and research.</li>
+                            </ul>
+                            <a href="../static/img/piechart_sector.jpg" download="analysis_image17.jpg" class="download-link">Download Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more image-description pairs as needed -->
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+{% block foot %}
+    <!-- Remove the script tag for lightbox JavaScript -->
+{% endblock %}
